@@ -1,5 +1,6 @@
 {
-  "name": "typescript-webpack-threejs-template",
+  "name": "bubble",
+  "description": "THIS IS A BUBBLE",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve",
@@ -8,9 +9,12 @@
     "build": "webpack --mode=production"
   },
   "dependencies": {
-    "three": "~0.125.2"
+    "postprocessing": "^6.21.3",
+    "three": "0.127.0"
   },
   "devDependencies": {
+    "@types/three": "^0.127.0",
+    "file-loader": "^6.2.0",
     "ts-loader": "^8.0.17",
     "tslint": "^6.1.3",
     "typescript": "^4.1.5",

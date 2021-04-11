@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Three.js template</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
+    rel="stylesheet">
+  <title>THIS IS A BUBBLE</title>
   <style>
     * {
       margin: 0;
@@ -14,19 +19,69 @@
 
     body {
       overflow: hidden;
+      background-color: #ACB8BD;
     }
 
-    #main-canvas {
-      position: absolute;
+    canvas {
+      position: fixed;
       height: 100%;
       width: 100%;
     }
+
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      position: relative;
+      color: #ACB8BD;
+      z-index: 100;
+      line-height: 71.2%;
+    }
+
+    .container-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .container {
+      mix-blend-mode: overlay;
+      margin: 30px 0;
+      width: 500px;
+      padding: 30px;
+    }
+
+    .scale__container--js {
+      text-align: center;
+    }
+
+    .scale--js {
+      display: inline-block;
+      transform-origin: 50% 0;
+      -webkit-font-smoothing: antialiased;
+      transform: translate3d(0, 0, 0);
+    }
+
   </style>
 </head>
 
 <body>
-  <canvas id="main-canvas"></canvas>
-  <script src="dist/bundle.js"></script>
+<canvas id="canvas"></canvas>
+
+<div class="container-wrap">
+  <div class="container">
+    <div class="scale__container--js">
+      <h1 class="scale--js">THIS IS A</h1>
+    </div>
+    <div class="scale__container--js">
+      <h1 class="scale--js">BUB</h1>
+    </div>
+    <div class="scale__container--js">
+      <h1 class="scale--js">BLE</h1>
+    </div>
+  </div>
+</div>
+<script src="dist/bundle.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,9 @@
 {
-  "defaultSeverity": "error",
+  "defaultSeverity": "warn",
   "extends": [
     "tslint:recommended"
   ],
   "rules": {
-    "quotemark": [
-      true,
-      "single"
-    ],
     "no-unused-expression": false
   }
 }
